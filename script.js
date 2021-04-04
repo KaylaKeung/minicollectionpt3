@@ -79,7 +79,6 @@ function showGrammys() {
     awardContainer.append(nameOfArtist);
 
   
-
     //link gif
     var songGif = document.createElement("img");
     songGif.classList.add("song-gif");
@@ -114,10 +113,10 @@ function showGrammys() {
 // get genre field from airtable
 // loop through the array and add each genre as
 // a class to the song container
-var grammyGenre = grammy.fields.genre;
-grammyGenre.forEach(function(genre) {
-  awardContainer.classList.add(genre);
-});
+// var grammyGenre = grammy.fields.genre;
+// grammyGenre.forEach(function(genre) {
+//   awardContainer.classList.add(genre);
+// });
 
 // //     // clicking on filter by rap
 //     var filterRap = document.querySelector(".rap");
@@ -139,54 +138,6 @@ grammyGenre.forEach(function(genre) {
 
 //     });
 
-//     //     // clicking on filter by pop
-//     var filterPop = document.querySelector(".pop");
-//     filterPop.addEventListener("click", function() {
-//       if (awardContainer.classList.contains("pop")) {
-//         awardContainer.style.height="90vh";
-//         award.style.fontSize="1.5em";
-//         songGif.style.display="flex";
-//          nameOfArtist.style.opacity="1";
-//         songImage.style.display="flex";
-        
-//       } else {
-//         awardContainer.style.height="0";
-//   award.style.fontSize="0";
-//   songGif.style.display="none";
-//    nameOfArtist.style.opacity="0";
-//   songImage.style.display="none";
-//       }
 
-//     });
-//     //     // clicking on filter by R&B
-//     var filterRnb = document.querySelector(".rnb");
-//     filterRnb.addEventListener("click", function() {
-//       if (awardContainer.classList.contains("rnb")) {
-//         awardContainer.style.height="90vh";
-//         award.style.fontSize="1.5em";
-//         songGif.style.display="flex";
-//          nameOfArtist.style.opacity="1";
-//         songImage.style.display="flex";
-        
-//       } else {
-//         awardContainer.style.height="0";
-//   award.style.fontSize="0";
-//   songGif.style.display="none";
-//    nameOfArtist.style.opacity="0";
-//   songImage.style.display="none";
-//       }
-
-//     });
-//     //     // clicking on filter by reset
-//     var reset = document.querySelector(".rap");
-//     reset.addEventListener("click", function() {
-    
-//         awardContainer.style.height="90vh";
-//         award.style.fontSize="1.5em";
-//         songGif.style.display="flex";
-//        nameOfArtist.style.opacity="1";
-//         songImage.style.display="flex";
-
-//     });
   });
 }
