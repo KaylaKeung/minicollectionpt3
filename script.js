@@ -247,5 +247,65 @@ nameOfArtist.style.opacity="1";
 nameOfArtist.style.top="0";
 
 })
+//other filter
+var filterOther = document.querySelector(".other");
+    filterOther.addEventListener("click", function() {
+      awardContainer.style.opacity="1";
+      awardContainer.style.width="100vw";
+      awardContainer.style.marginBottom="-20%";
+      awardContainer.style.paddingBottom="-20%";
+      awardContainer.style.paddingTop="2em";
+      awardContainer.style.height="90vh";
+      award.style.fontSize="2.5em";
+      award.style.margin="0";
+      award.style.top="7%";
+      songGif.style.display="flex";
+      songGif.style.opacity="1";
+      nameOfArtist.style.opacity="1";
+      songImage.style.display="flex";
+      songImage.style.opacity="1";
+nameOfArtist.style.fontSize="1.5em";
+nameOfArtist.style.marginTop="auto";
+nameOfArtist.style.opacity="1";
+nameOfArtist.style.top="0";
+      if (awardContainer.classList.contains("other")) {
+        awardContainer.style.height="100vh";
+        nameOfArtist.style.top="-9%";
+      
+      } else {
+        awardContainer.style.opacity="0";
+        awardContainer.style.padding="0";
+        awardContainer.style.height="35vh";
+        award.style.fontSize="1px";
+        songGif.style.display="none";
+        songGif.style.opacity="0";
+        nameOfArtist.style.opacity="0";
+        songImage.style.display="none";
+        songImage.style.opacity="0";
+      }
+    });
+
+    var reset = document.querySelector(".reset");
+    reset.addEventListener("click", function() {
+      awardContainer.style.opacity="1";
+      awardContainer.style.width="100vw";
+      awardContainer.style.marginBottom="-20%";
+      awardContainer.style.paddingBottom="-20%";
+      awardContainer.style.paddingTop="2em";
+      awardContainer.style.height="90vh";
+      award.style.fontSize="2.5em";
+      award.style.margin="0";
+      award.style.top="7%";
+      songGif.style.display="flex";
+      songGif.style.opacity="1";
+      nameOfArtist.style.opacity="1";
+      songImage.style.display="flex";
+      songImage.style.opacity="1";
+nameOfArtist.style.fontSize="1.5em";
+nameOfArtist.style.marginTop="auto";
+nameOfArtist.style.opacity="1";
+nameOfArtist.style.top="0";
+
+})
   });
 }
