@@ -114,8 +114,8 @@ function showGrammys() {
 // get genre field from airtable
 // loop through the array and add each genre as
 // a class to the song container
-var grammysGenre = grammy.fields.genre;
-grammysGenre.forEach(function(genre) {
+var grammyGenre = grammy.fields.genre;
+grammyGenre.forEach(function(genre) {
   awardContainer.classList.add(genre);
 });
 
