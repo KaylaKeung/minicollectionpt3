@@ -107,37 +107,145 @@ function showGrammys() {
       songGif.style.display="flex";
     })
 
+    var songGenre = grammy.fields.genre;
+    songGenre.forEach(function(genre) {
+      awardContainer.classList.add(genre);
+    });
 
-//GENRE NOT WORKING
-
-// get genre field from airtable
-// loop through the array and add each genre as
-// a class to the song container
-// var grammyGenre = grammy.fields.genre;
-// grammyGenre.forEach(function(genre) {
-//   awardContainer.classList.add(genre);
-// });
-
-// //     // clicking on filter by rap
-//     var filterRap = document.querySelector(".rap");
-//     filterRap.addEventListener("click", function() {
-//       if (awardContainer.classList.contains("rap")) {
-//         awardContainer.style.height="90vh";
-//         award.style.fontSize="1.5em";
-//         songGif.style.display="flex";
-//          nameOfArtist.style.opacity="1";
-//         songImage.style.display="flex";
+    // clicking on filter by pop
+    // change background of pop genres to red
+    // else change to white
+    var filterPop = document.querySelector(".pop");
+    filterPop.addEventListener("click", function() {
+      awardContainer.style.opacity="1";
+      awardContainer.style.width="100vw";
+      awardContainer.style.marginBottom="-20%";
+      awardContainer.style.paddingBottom="-20%";
+      awardContainer.style.paddingTop="2em";
+      awardContainer.style.height="90vh";
+      award.style.fontSize="2.5em";
+      award.style.margin="0";
+      award.style.top="7%";
+      songGif.style.display="flex";
+      songGif.style.opacity="1";
+      nameOfArtist.style.opacity="1";
+      songImage.style.display="flex";
+      songImage.style.opacity="1";
+nameOfArtist.style.fontSize="1.5em";
+nameOfArtist.style.marginTop="auto";
+nameOfArtist.style.opacity="1";
+nameOfArtist.style.top="0";
+      if (awardContainer.classList.contains("pop")) {
+        awardContainer.style.height="100vh";
+        nameOfArtist.style.top="-9%";
+    
+      } else {
+        awardContainer.style.opacity="0";
+        awardContainer.style.padding="0";
+        awardContainer.style.height="37vh";
+        award.style.fontSize="1px";
+        songGif.style.display="none";
+        songGif.style.opacity="0";
+        nameOfArtist.style.opacity="0";
+        songImage.style.display="none";
+        songImage.style.opacity="0";
+      }
+    });
+    var filterRap = document.querySelector(".rap");
+    filterRap.addEventListener("click", function() {
+      awardContainer.style.opacity="1";
+      awardContainer.style.width="100vw";
+      awardContainer.style.marginBottom="-20%";
+      awardContainer.style.paddingBottom="-20%";
+      awardContainer.style.paddingTop="2em";
+      awardContainer.style.height="90vh";
+      award.style.fontSize="2.5em";
+      award.style.margin="0";
+      award.style.top="7%";
+      songGif.style.display="flex";
+      songGif.style.opacity="1";
+      nameOfArtist.style.opacity="1";
+      songImage.style.display="flex";
+      songImage.style.opacity="1";
+nameOfArtist.style.fontSize="1.5em";
+nameOfArtist.style.marginTop="auto";
+nameOfArtist.style.opacity="1";
+nameOfArtist.style.top="0";
+      if (awardContainer.classList.contains("rap")) {
+        awardContainer.style.height="100vh";
+        nameOfArtist.style.top="-9%";
         
-//       } else {
-//         awardContainer.style.height="0";
-//   award.style.fontSize="0";
-//   songGif.style.display="none";
-//    nameOfArtist.style.opacity="0";
-//   songImage.style.display="none";
-//       }
+      
+      } else {
+        awardContainer.style.opacity="0";
+        awardContainer.style.padding="0";
+        awardContainer.style.height="35vh";
+        award.style.fontSize="1px";
+        songGif.style.display="none";
+        songGif.style.opacity="0";
+        nameOfArtist.style.opacity="0";
+        songImage.style.display="none";
+        songImage.style.opacity="0";
+      }
+    });
+    var filterRnb = document.querySelector(".rnb");
+    filterRnb.addEventListener("click", function() {
+      awardContainer.style.opacity="1";
+      awardContainer.style.width="100vw";
+      awardContainer.style.marginBottom="-20%";
+      awardContainer.style.paddingBottom="-20%";
+      awardContainer.style.paddingTop="2em";
+      awardContainer.style.height="90vh";
+      award.style.fontSize="2.5em";
+      award.style.margin="0";
+      award.style.top="7%";
+      songGif.style.display="flex";
+      songGif.style.opacity="1";
+      nameOfArtist.style.opacity="1";
+      songImage.style.display="flex";
+      songImage.style.opacity="1";
+nameOfArtist.style.fontSize="1.5em";
+nameOfArtist.style.marginTop="auto";
+nameOfArtist.style.opacity="1";
+nameOfArtist.style.top="0";
+      if (awardContainer.classList.contains("rnb")) {
+        awardContainer.style.height="100vh";
+        nameOfArtist.style.top="-9%";
+      
+      } else {
+        awardContainer.style.opacity="0";
+        awardContainer.style.padding="0";
+        awardContainer.style.height="35vh";
+        award.style.fontSize="1px";
+        songGif.style.display="none";
+        songGif.style.opacity="0";
+        nameOfArtist.style.opacity="0";
+        songImage.style.display="none";
+        songImage.style.opacity="0";
+      }
+    });
 
-//     });
+    var reset = document.querySelector(".reset");
+    reset.addEventListener("click", function() {
+      awardContainer.style.opacity="1";
+      awardContainer.style.width="100vw";
+      awardContainer.style.marginBottom="-20%";
+      awardContainer.style.paddingBottom="-20%";
+      awardContainer.style.paddingTop="2em";
+      awardContainer.style.height="90vh";
+      award.style.fontSize="2.5em";
+      award.style.margin="0";
+      award.style.top="7%";
+      songGif.style.display="flex";
+      songGif.style.opacity="1";
+      nameOfArtist.style.opacity="1";
+      songImage.style.display="flex";
+      songImage.style.opacity="1";
+nameOfArtist.style.fontSize="1.5em";
+nameOfArtist.style.marginTop="auto";
+nameOfArtist.style.opacity="1";
+nameOfArtist.style.top="0";
 
-
+})
   });
 }
