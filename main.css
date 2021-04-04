@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Voyage-Regular";
+  src: url("./assets/Voyage-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "Voyage-Bold";
+  src: url("./assets/Voyage-Bold.otf") format("otf");
+}
+
+body {
+  font-family: "Voyage-Bold";
+  color: white;
+  font-size: 2em;
+  background-color: rgba(15, 15, 15, 0.986);
+}
+
+.container {
+  padding-top: 3em;
+}
+.award {
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 7%;
+}
+
+.song-image {
+  width: 100%;
+  z-index: -3;
+}
+.song-artist {
+  font-size: 1.5em;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  text-align: center;
+  color: white;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.song-gif {
+  width: 100%;
+  display: none;
+}
+
+.award-container {
+  width: 100vw;
+  display: flex;
+  display: grid;
+  transform: skewY(4deg);
+  margin-bottom: -20%;
+  padding-bottom: -20%;
+  padding-top: 2em;
+  height: 90vh;
+}
+
+.filter {
+  padding: 2em;
+  cursor: pointer;
+}
+span {
+  margin-right: 1em;
+}
+.pop:hover {
+  text-decoration: underline;
+}
+.rap:hover {
+  text-decoration: underline;
+}
+.rnb:hover {
+  text-decoration: underline;
+}
+.reset:hover {
+  text-decoration: underline;
+}
+.pop {
+}
+.rap {
+}
+.rnb {
+}
